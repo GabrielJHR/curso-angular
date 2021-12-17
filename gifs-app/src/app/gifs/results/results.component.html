@@ -1,0 +1,10 @@
+<div class="row my-4 align-items-stretch gap-2 ">
+  <div *ngFor="let gif of results" class="mb-2 col-sm-6 col-md-4 col-lg-3">
+	<div class="card">
+	  <div class="card-body">
+		<img [src]="gif.images.fixed_width.url" [alt]="gif.title">
+		<b>{{ gif.title }}</b>
+	  </div>
+	</div>
+  </div>
+</div>
