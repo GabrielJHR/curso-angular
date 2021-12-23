@@ -1,0 +1,16 @@
+<div *ngIf="pais">
+  <h2>{{ pais.name.common }}</h2>
+  <hr>
+
+  <div class="row my-4">
+    <div class="col">
+      <img [src]="pais.flags.png" [alt]="pais.name.common">
+    </div>
+    <div class="col">
+      <p><b>Nombre oficial: </b>{{pais.name.official}}</p>
+      <p><b>Poblacion: </b>{{pais.population | number}}</p>
+      <p><b>Capital: </b>{{pais.capital}}</p>
+      <p><b>Region: </b>{{pais.region}}</p>
+    </div>
+  </div>
+</div>
