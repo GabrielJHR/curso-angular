@@ -11,6 +11,7 @@ export class PorPaisComponent {
   public termino : string = "";
   haveError : boolean = false;
   result : Pais[] = [];
+  sugerenciasResponse : Pais[] = [];
 
   constructor( private _paisService : PaisService) { }
   
@@ -20,15 +21,24 @@ export class PorPaisComponent {
     this._paisService.buscarPais(this.termino)
       .subscribe((res : Pais[])=> {
         this.result = res;
+        this.sugerenciasResponse = []
       }, (err) => {
         this.haveError = true;
         this.result = [];
+        console.log(err)
       })
   }
 
   sugerencias( event : string){
     this.haveError = false;
-    console.log(event)
+    this.sugerenciasResponse = [];
+    if(this.sugerenciasResponse){
+      this._paisService.buscarPais(event)
+        .subscribe(resp => {
+          this.sugerenciasResponse = resp;
+          this.sugerenciasResponse = this.sugerenciasResponse.slice(0,5)
+      })
+    }
   }
 
 }
