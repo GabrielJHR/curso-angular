@@ -1,0 +1,29 @@
+<div class="text-layout">
+  <h1>Decimal pipe y porcentaje</h1>
+  <p>
+	Adipisicing corporis consectetur suscipit ullam sapiente Minus recusandae odio minus eius magnam dolores! Libero voluptatem quia
+  </p>
+</div>
+
+<div class="grid">
+  <div class="col-4">
+	<p-card header="Ventas netas"
+			subheader="number">
+	  {{ventasNetas | number:'1.2-2'}}
+	</p-card>
+  </div>
+
+  <div class="col-4">
+	<p-card header="Ventas brutas"
+			subheader="currency">
+	  {{ventasNetas + 12221345 | currency:'ARS'}}
+	</p-card>
+  </div>
+
+  <div class="col-4">
+	<p-card header="Ganancia porcentual"
+			subheader="percent">
+	  {{ porcentaje | percent }}
+	</p-card>
+  </div>
+</div>

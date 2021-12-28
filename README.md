@@ -31,3 +31,25 @@ En esta seccion del curso se ve:
 * Crear un objeto de tipo Subject para operarlo mediante pipes. 
 * Uso del modulo ActivatedRoute para obtener parametros de las rutas.
 * Uso de switchMap y tap del modulo de operadores rxjs.
+
+### Pipes App
+Es una aplicacion creada con componentes de la libreria [PrimeNg](https://www.primefaces.org/primeng/v9-lts/#/) para practicar los pipes que vienen por defecto con angular y crear nuevos pipes.
+
+En esta seccion del curso se va a ver:
+
+* Todos los Pipes de Angular a la fecha:
+  1. Uppercase
+  2. Lowercase
+  3. TitleCase
+  4. Date
+  5. Decimal
+  6. Currency
+  7. Percent
+  8. i18nSelect
+  9. i18Plural
+  10. KeyValue
+  11. Json
+  12. Async
+* PrimeNG
+* Módulo especializado para módulos de PrimeNG
+
