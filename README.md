@@ -51,5 +51,8 @@ En esta seccion del curso se va a ver:
   11. Json
   12. Async
 * PrimeNG
-* Módulo especializado para módulos de PrimeNG
+* Módulo especializado para módulos de PrimeNG.
+* Pipes personalizados.
+* Argumentos hacia los Pipes.
+* SortableTable manual y usando PrimeNg.
 
