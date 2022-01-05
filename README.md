@@ -5,6 +5,8 @@ Repositorio de proyectos del curso de angular dictado por Fernando Herrera en la
 ## Proyectos
 * Gifs App
 * SPA Paises app
+* Pipes App
+* Heroes App
 
 ### Gifs app
 Es una aplicacion para buscar gifs que consume una API llamada [Giphy](https://giphy.com/).
@@ -56,3 +58,22 @@ En esta seccion del curso se va a ver:
 * Argumentos hacia los Pipes.
 * SortableTable manual y usando PrimeNg.
 
+### Heroes app
+
+Heroes app es una aplicacion que obtiene datos de superheroes provistos por un servidor basico creado con JSON-Server. Esta aplicacion hace uso de la libreria de componentes [Angular Material](https://material.angular.io/)
+
+
+Los temas vistos en esta aplicacion son:
+
+1. Rutas Hijas
+2. Rutas Principales
+3. LazyLoad
+4. Multiples estilos en la misma SPA
+5. Angular Material
+6. Interfaces y tipado
+7. Pipes personalizados
+8. Variables de entorno
+9. Autocomplete de AngularMaterial
+10. Peticiones HTTP
+11. JSON-Server
+12. Angular Flex y Flexbox
