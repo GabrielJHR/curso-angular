@@ -26,7 +26,7 @@ const routes : Routes = [
         component: BuscarComponent
       },
       {
-        path: 'heroe:id',
+        path: 'heroe/:id',
         component: HeroeComponent
       },
       {

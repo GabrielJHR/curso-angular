@@ -1,5 +1,40 @@
-<li><a routerLink="/heroes/listado">Listado de heroes</a></li>
-<li><a routerLink="/heroes/agregar">Agregar heroe</a></li>
-<li><a routerLink="/heroes/editar/1">Editar heroe</a></li>
-<li><a routerLink="/heroes/buscar">Buscar heroe</a></li>
-<router-outlet></router-outlet>
+<mat-sidenav-container fullscreen>
+  <mat-toolbar>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="spacer"></span>
+    <button mat-button>Log out</button>
+  </mat-toolbar>
+
+  <mat-sidenav #sidenav mode="over">
+    <mat-toolbar color="primary">
+      <span>Menu</span>
+      <span class="spacer"></span>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a  routerLink="/heroes/listado"
+          mat-list-item
+          (click)="sidenav.toggle()">
+          <span>Lista de heroes</span>
+      </a>
+      <a  routerLink="/heroes/buscar"
+          mat-list-item
+          (click)="sidenav.toggle()">
+          <span>Buscar heroe</span>
+      </a>
+      <a  routerLink="/heroes/agregar"
+          mat-list-item
+          (click)="sidenav.toggle()">
+          <span>Agregar heroe</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>
