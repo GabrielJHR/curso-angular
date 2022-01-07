@@ -3,8 +3,11 @@
     <button mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
+    <span>{{auth.usuario}}</span>
     <span class="spacer"></span>
-    <button mat-button>Log out</button>
+    <button 
+      mat-button
+      (click)="logout()">Log out</button>
   </mat-toolbar>
 
   <mat-sidenav #sidenav mode="over">

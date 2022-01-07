@@ -77,3 +77,20 @@ Los temas vistos en esta aplicacion son:
 10. Peticiones HTTP
 11. JSON-Server
 12. Angular Flex y Flexbox
+13. CRUD
+    1. Create
+    2. Read
+    3. Update
+    4. delete
+14. Pipes puros e impuros
+15. Snacks
+16. Dialogs
+17. Inyección de servicios manualmente
+18. Protección de rutas
+19. Rutas privadas
+20. Rutas públicas
+21. Servicio de autenticación
+22. Guards
+23. CanActivate
+24. Can Load
+25. Mantener la sesión del usuario

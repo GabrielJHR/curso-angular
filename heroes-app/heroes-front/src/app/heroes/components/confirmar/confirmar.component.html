@@ -1,0 +1,15 @@
+<h2>Eliminar heroe</h2>
+<div fxLayout="column">
+  <div fxFlex="100" class="mensaje">
+    <p>Esta seguro de que quiere eliminar a {{data}} de su base de datos?</p>
+  </div>
+  <div fxLayout="row" fxLayoutGap="10px">
+	<button fxFlex="50" 
+            mat-raised-button 
+            color="warn"
+            (click)="eliminar()">Eliminar</button>
+	<button fxFlex="50" 
+            mat-button
+            (click)="cancelar()">Cancelar</button>
+  </div>
+</div>

@@ -5,9 +5,23 @@ import {Heroe} from '../interfaces/heroe.interface';
   name: 'imagen'
 })
 export class ImagenPipe implements PipeTransform {
+// Retorna el url o path de la imagen dependiendo su origen (url, carpeta assets, no imagen)
 
   transform(value: Heroe): string {
-    return value.alt_img ? value.alt_img : `assets/heroes/${value.id}.jpg`;
+    if(!value.alt_img){
+      
+      if(value.id){
+        return `assets/heroes/${value.id}.jpg`
+      }
+      else {
+        return 'assets/no-image.png'
+      }
+
+    } 
+
+    else {
+      return value.alt_img
+    }
   }
 
 }
