@@ -1,0 +1,69 @@
+<h1>Template basico</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+
+	<form (ngSubmit)="guardar()" #miFormulario="ngForm">
+	  <!-- Producto -->
+	  <div class="mb-3">
+		<label for="producto">Producto:</label>
+		<div>
+		  <input
+			ngModel
+			name="producto"
+			class="form-control" 
+			type="text" 
+			id="producto"
+   			required
+			placeholder="Ingresa el nombre del producto"
+			minlength="3">
+		  <small
+			*ngIf="validarNombre()"
+			class="text-danger">El producto debe tener al menos 3 caracteres</small>
+		</div>
+	  </div>
+
+	  <!-- Precio -->
+	  <div class="mb-3">
+		<label for="precio">Precio:</label>
+		<div>
+		  <input
+			ngModel
+			customMin
+			[minimo]="0"
+			name="precio"
+			class="form-control" 
+			type="number" 
+			id="precio"
+   			required
+			placeholder="Ingresa el precio producto">
+		  <small
+			*ngIf="validarPrecio()"
+			class="text-danger">El precio debe ser mayor o igual a 0</small>
+		</div>
+	  </div>
+	  
+	  <!-- Existencias -->
+	  <div class="mb-3">
+		<label for="existencias">Existencias del producto:</label>
+		<div>
+		  <input
+			ngModel
+			name="existencias"
+			class="form-control" 
+			type="number" 
+			id="existencias"
+			placeholder="Existencias del producto">
+		</div>
+	  </div>
+	  <div>
+		<input 
+			class="btn btn-primary float-end" 
+			type="submit"
+   			[disabled]="miFormulario.invalid"
+			value="Enviar">
+	  </div>
+	</form>
+  </div>
+</div>

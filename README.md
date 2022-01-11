@@ -7,6 +7,7 @@ Repositorio de proyectos del curso de angular dictado por Fernando Herrera en la
 * SPA Paises app
 * Pipes App
 * Heroes App
+* Formularios App
 
 ### Gifs app
 Es una aplicacion para buscar gifs que consume una API llamada [Giphy](https://giphy.com/).
@@ -94,3 +95,27 @@ Los temas vistos en esta aplicacion son:
 23. CanActivate
 24. Can Load
 25. Mantener la sesión del usuario
+
+### Formularios App
+Es una aplicion creada con el objetivo de probar las dos maneras que tiene angular para manejar datos desde los formularios.
+
+En esta aplicion se ven los siguientes temas:
+
+#### Formularios por template
+1. Template driven.
+2. ViewChild
+3. Two way databinding
+4. Formularios dinámicos
+5. Checks, radios y switches
+6. Directivas personalizadas
+7. Manejo del formulario y validaciones
+8. Encapsular módulos y scope de los mismos
+
+#### Formularios reactivos
+1. Formularios Reactivos
+2. Lazyload y tareas relacionadas
+3. Validaciones propias de Angular
+4. Arreglos y objetos anidados
+5. FormBuilder
+6. FormGroup
+7. FormArray

@@ -1,0 +1,65 @@
+<h1>Reactivos dinamico</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+	<form (ngSubmit)="guardar()" [formGroup]="miFormulario" autocomplete="off">
+
+	  <div class="mb-3">
+        <div>
+          <label for="nombre">Nombre persona</label>
+          <input 
+            class="form-control" 
+            formGroupName="nombre"
+            type="text">
+          <small
+            *ngIf="campoEsValido('nombre')"
+            class="text-danger">Este campo es obligatorio</small>
+        </div>
+      </div>  
+	  
+      <div class="mb-3">
+        <div class="input-group">
+          <input 
+            class="form-control" 
+            [formControl]="nuevoFavorito"
+            placeholder="Agregar favorito"
+            (keyup.enter)="agregarFavorito()">
+          <button 
+            type="button" 
+            class="btn btn-outline-primary"
+            (click)="agregarFavorito()">Agregar</button>
+        </div>
+      </div> 
+
+
+
+	  <div class="mb-3">
+        <div formArrayName="favoritos" >
+          <label>Lista de favoritos</label>
+           <div class="input-group mb-1"
+                *ngFor="let favorito of favoritosArr.controls; let i = index">
+
+                <input class="form-control"
+                        [formControlName]="i">
+
+                <button class="btn btn-outline-danger"
+                        type="button"
+                        (click)="borrar(i)">
+                   X
+               </button>
+            </div>
+        </div>
+      </div>  
+
+      <div>
+        <button 
+          class="btn btn-primary" 
+          type="submit"
+          (click)="true">Guardar</button>
+      </div>
+	</form>
+  </div>
+</div>
+
+<pre>{{miFormulario.value | json}}</pre>
