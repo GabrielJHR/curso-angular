@@ -1,0 +1,98 @@
+<h2>Registro</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+	<form 
+		autocomplete="off"
+		[formGroup]="miFormulario"
+		(ngSubmit)="registrarse()">
+	  
+	  <!-- Campo nombre -->
+	  <div class="mb-3">
+		<label for="nombre">Nombre completo:</label>
+		<div>
+		  <input 
+			type="text"
+			class="form-control"
+   			formControlName="nombre"
+			id="nombre"
+			placeholder="Ingresar nombre y apellido">
+		  <small 
+			  class="text-danger"
+			  *ngIf="campoInvalido('nombre')">Debe de ser en formato de nombre y apellido</small>
+		</div>
+	  </div>
+
+	  <!-- Campo email -->
+	  <div class="mb-3">
+		<label for="email">Email:</label>
+		<div>
+		  <input 
+			type="email"
+   			formControlName="email"
+			class="form-control"
+			id="email"
+			placeholder="Ingresar email del usuario">
+		  <small 
+			  class="text-danger"
+	 *ngIf="campoInvalido('email')">{{emailError}}</small>
+		</div>
+	  </div>
+
+	  <!-- Campo username -->
+	  <div class="mb-3">
+		<label for="username">Nombre de usuario:</label>
+		<div>
+		  <input 
+			type="text"
+			class="form-control"
+   			formControlName="username"
+			id="username"
+			placeholder="Ingresar el nombre de usuario">
+		  <small 
+			  class="text-danger"
+			  *ngIf="campoInvalido('username')">El nombre de usuario no puede ser strider</small>
+		</div>
+	  </div>
+
+	  <!-- Campo password -->
+	  <div class="mb-3">
+		<label for="password">Password:</label>
+		<div>
+		  <input 
+			class="form-control"
+			id="password"
+			type="password"
+   			formControlName="password"
+			placeholder="Ingresar la contraseña">
+		</div>
+	  </div>
+
+	  <!-- Campo password -->
+	  <div class="mb-3">
+		<div>
+		  <input 
+			class="form-control"
+			id="password2"
+			type="password"
+   			formControlName="password2"
+			placeholder="Confirmar la contraseña">
+		  <small 
+			  class="text-danger"
+			 *ngIf="passwordDistintas()">La contraseña debe coincidir</small>
+		</div>
+	  </div>
+
+	  <div class="row">
+		  <div class="col my-4">
+			  <button 
+				  class="btn btn-primary float-end"
+	  			  [disabled]="miFormulario.pending"
+				  type="submit">Registrarse</button>
+		  </div>
+	  </div>
+
+	</form>
+  </div>
+</div>

@@ -18,3 +18,13 @@
     routerLink="{{item.link}}"
     routerLinkActive="active">{{item.etiqueta}}</li>
 </ul>
+
+<h2 class="mt-5">Auth</h2>
+<hr>
+<ul class="list-group">
+  <li 
+    *ngFor="let item of menuAuth"
+    class="list-group-item"
+    routerLink="{{item.link}}"
+    routerLinkActive="active">{{item.etiqueta}}</li>
+</ul>
