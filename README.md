@@ -144,3 +144,5 @@ En esta seccion del curso se vieron los siguientes temas:
 9. @types.
 10. Zoom.
 11. Range.
+
+### Aplicacion de graficas.
