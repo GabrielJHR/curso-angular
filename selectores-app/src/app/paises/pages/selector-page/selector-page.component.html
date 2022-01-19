@@ -1,0 +1,55 @@
+<h2 class="mt-4">Selectores anidados</h2>
+<hr>
+
+<form [formGroup]="miFormulario" (ngSubmit)="enviar()">
+  
+  <!-- regiones -->
+  <div class="col mb-3">
+	<label for="continente">Continentes: </label>
+	<select
+	 	(change)="true"
+		class="form-control" 
+		id="continente"
+		formControlName="continente">
+	  <option value="">--Seleccione un continente--</option>
+	  <option *ngFor="let region of regiones" 
+	  	value="{{region}}">{{region | titlecase}}</option>
+	</select>
+  </div>
+  
+  <!--paises -->
+  <div class="col mb-3" *ngIf="paises.length > 0">
+	<label for="pais">Paises: </label>
+	<select 
+		class="form-control" 
+		id="pais"
+  		(change)="true"
+		formControlName="pais">
+	  <option value="">--Seleccione un pais--</option>
+	  <option *ngFor="let pais of paises" 
+	  	value="{{pais.cca2}}">{{pais.name.common}}</option>
+	</select>
+  </div>
+
+  <!-- Fronteras -->
+  <div class="col mb-3" *ngIf="fronteras.length > 0">
+	<label for="pais">Fronteras: </label>
+	<select 
+		class="form-control" 
+  		formControlName="paisLimitrofe"
+		id="pais">
+	  <option *ngFor="let pais of fronteras ">
+	  	{{pais}}
+	  </option>
+	</select>
+  </div>
+
+  <div class="row">
+	<div class="col">
+		<button 
+		  class="btn btn-primary 
+		  float-end"
+		  type="submit">Enviar</button>
+	</div>
+  </div>
+</form>

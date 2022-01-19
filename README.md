@@ -8,6 +8,8 @@ Repositorio de proyectos del curso de angular dictado por Fernando Herrera en la
 * Pipes App
 * Heroes App
 * Formularios App
+* LifeCycle
+* Aplicacion de mapas
 
 ### Gifs app
 Es una aplicacion para buscar gifs que consume una API llamada [Giphy](https://giphy.com/).
@@ -119,3 +121,26 @@ En esta aplicion se ven los siguientes temas:
 5. FormBuilder
 6. FormGroup
 7. FormArray
+
+En esta aplicacion tambien se puso en practica el uso de validaciones sincronas y asincronas, manejo de selectores anidados usando el conjunto de operadores RXJS.
+
+### LifeCycle
+Es una aplicacion de angular creada solamente para poner en practica los conceptos basicos del ciclo de vida de un componente y el uso de los hooks.
+
+### Aplicacion de mapas
+El objetivo de esta aplicacion es poner en practica los conceptos anteriormente vistos en el curso. Ademas incluir en las apliciones librerias hechas en javascript.
+
+La libreria que se va a usar en esta aplicacion es [MapBox](https://www.mapbox.com/).
+
+En esta seccion del curso se vieron los siguientes temas:
+1. Manejo de librerías escritas en JavaScript en TypeScript.
+2. Uso de Mapas basados en Mapbox.
+3. Marcadores.
+4. Eventos.
+5. FlyTo.
+6. Coordenadas geográficas.
+7. Componentes para re-utilización de mapas.
+8. Mantener objetos de forma persistente.
+9. @types.
+10. Zoom.
+11. Range.

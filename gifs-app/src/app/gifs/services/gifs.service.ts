@@ -8,7 +8,7 @@ import { GifResponse, Gif } from 'src/app/interfaces/gifs.interface';
 })
 export class GifsService {
   private _history : string[] = JSON.parse(localStorage.getItem("history") || "[]");
-  private _apiKey : string = '8J7EkAgXQMR6lludkdxM6oQ9J00Ubnhf';
+  private _apiKey : string = '' //ApiKey;
   private _serviceUrl : string = 'https://api.giphy.com/v1/gifs'
   public response : Gif[] = JSON.parse(localStorage.getItem("result") || "[]");
 
