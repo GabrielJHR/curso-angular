@@ -146,3 +146,20 @@ En esta seccion del curso se vieron los siguientes temas:
 11. Range.
 
 ### Aplicacion de graficas.
+Es una aplicacion creada usando la libreria de ChartJS adaptada para Angular llamada ng2chart.
+
+Los temas vistos en esta seccion son:
+* Gráficas dinámicas
+* Gráficas de Barra y Dona
+* Re-dibujar valores de gráfica
+* Gráficas basadas en peticiones HTTP
+* Componentes especializados para la re-utilización de gráficas
+
+### Directivas app
+Es una aplicacion basica para hacer directivas personalizadas y practicar los formularios reactivos.
+
+Los temas vistos en esta seccion son:
+* Directivas personalizadas
+* Directivas estructurales personalizadas
+* Manipulación del elemento del DOM que es host de la directiva
+* Cambio del HTML y estilos del objeto DOM host.

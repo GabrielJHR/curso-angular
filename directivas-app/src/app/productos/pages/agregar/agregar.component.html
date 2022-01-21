@@ -1,0 +1,44 @@
+<h1 class="mt-5">Agregar productos</h1>
+<hr>
+
+<form [formGroup]="miFormulario">
+  <div class="mb-3">
+	<label for="nombre">Nombre:</label>
+	
+	<input 
+	  type="text" 
+	  class="form-control"
+	  formControlName="nombre">
+	
+	<small
+   	  error-msg
+	  [color]="color"
+	  mensaje="Debe ingresar este campo"
+	  [mostrar]="campoInvalido('nombre')">
+	</small>
+
+  </div>
+
+  <div class="row">
+	<div class="col">
+	  <button 
+		class="btn btn-primary float-end"
+		type="submit">Guardar</button>
+	  
+	  <button 
+		class="btn btn-outline-success float-start"
+		type="button"
+		(click)="cambiarColor()">Cambiar color</button>
+	</div>
+  </div>
+</form>
+
+
+<h3 class="mt-5">Formulario</h3>
+
+<!-- Form -->
+<span>Valid:</span>
+<pre>{{ miFormulario.valid }}</pre>
+
+<span>Value:</span>
+<pre>{{ miFormulario.getRawValue() | json }}</pre>
