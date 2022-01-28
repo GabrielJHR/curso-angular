@@ -163,3 +163,35 @@ Los temas vistos en esta seccion son:
 * Directivas estructurales personalizadas
 * Manipulación del elemento del DOM que es host de la directiva
 * Cambio del HTML y estilos del objeto DOM host.
+
+### Auth App
+Es una aplicacion para crear usuarios y gestionar el acceso a ciertos modulos de angular dependiendo de si el usuario esta autenticado o no. En esta app se usa una base de datos no relacional para almacenar los datos.
+La aplicacion tiene dos partes. Un frontend que esta hecho en angular y el backend que utiliza nodejs:
+
+Librerias usadas en el backend:
+* Express
+* Mongoose
+* Bcrypt
+* Dotenv
+* Express validators
+* Cors
+
+Temas vistos en esta seccion del curso:
+* Fundamentos de Node
+* REST Services
+* JWT
+* MongoDB - Mongo Atlas
+* Express framework
+* Express validator
+* CRUD
+* Validaciones
+* Modelos de base de datos
+* Encriptar contraseñas
+* Conectar Angular con nuestro backend
+* Manejo de JWT
+* Lazyload y rutas
+* Guards
+* Mantener el estado del usuario
+* Manejo de errores
+* RXJS y Operadores
+* SweetAlert

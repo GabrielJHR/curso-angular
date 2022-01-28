@@ -1,0 +1,12 @@
+<h2>{{usuario.name}}</h2>
+<hr>
+
+<p>
+  Esta pagina solamente se mostrara una vez iniciada la sesion
+</p>
+
+<button
+  (click)="logOut()">Log out</button>
+
+<h3>Datos</h3>
+<pre>{{ usuario | json}}</pre>
