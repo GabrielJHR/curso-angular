@@ -1,5 +1,5 @@
 # Curso angular
-Repositorio de proyectos del curso de angular dictado por Fernando Herrera en la plataforma udemy. Prueba
+Repositorio de proyectos del curso de angular dictado por Fernando Herrera en la plataforma udemy.
 
 [Link al curso](https://www.udemy.com/course/angular-fernando-herrera/)
 ## Proyectos
